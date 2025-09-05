@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rulet Kazino</title>
+  <!-- Шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --gold1:#7a4a05;
+      --gold2:#b07a1a;
+      --gold3:#e9c15a;
+      --gold4:#fff3b0;
+    }
+    body{
+      margin:0;
+      background:url("https://img.freepik.com/premium-vector/casino-luxury-vip-invitation-with-celebration-party-gambling-banner-background_29865-1738.jpg?ga=GA1.1.31191468.1755965969&semt=ais_hybrid&w=740&q=80") no-repeat center center fixed;
+      background-size:cover;
+      font-family: Arial, sans-serif;
+      color:#fff;
+    }
+    .overlay{
+      position:fixed; inset:0;
+      background:rgba(0,0,0,0.55);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; padding:24px;
+    }
+    .logo-wrap{
+      position:absolute; top:90px; left:50%; transform:translateX(-50%);
+      width:min(92vw, 1100px);
+    }
+    svg{
+      width:100%; height:auto;
+      display:block;
+      filter:drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+    }
+    .btn{
+      display:inline-block; margin:10px; padding:14px 26px;
+      font-weight:700; font-size:1.05rem;
+      background:#ffd166; color:#000;
+      border-radius:10px; text-decoration:none;
+      box-shadow:0 6px 16px rgba(0,0,0,0.35);
+      transition:.3s;
+    }
+    .btn:hover{
+      transform:translateY(-2px);
+      filter:brightness(.95);
+    }
+    h1{
+      margin:180px 0 16px;
+      font-size:1.8rem;
+      font-weight:600;
+      color:#eee;
+    }
+
+    /* Иконка 24/7 */
+    .badge-247{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, var(--gold4), var(--gold2));
+      color:#000;
+      font-family:'Montserrat', sans-serif;
+      font-weight:800;
+      font-size:22px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 0 15px rgba(0,0,0,0.6), 0 0 20px rgba(255,209,102,0.7);
+      border:3px solid #fff3b0;
+      text-shadow:0 1px 2px rgba(255,255,255,0.7);
+    }
+  </style>
+</head>
+<body>
+  <!-- Логотип -->
+  <div class="logo-wrap">
+    <svg viewBox="0 0 1600 520" aria-label="RULET KAZİNO">
+      <defs>
+        <linearGradient id="goldFill" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="var(--gold4)"/>
+          <stop offset="35%" stop-color="var(--gold3)"/>
+          <stop offset="70%" stop-color="var(--gold2)"/>
+          <stop offset="100%" stop-color="var(--gold1)"/>
+        </linearGradient>
+        <linearGradient id="goldStroke" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#fff7cf"/>
+          <stop offset="50%" stop-color="#f6d776"/>
+          <stop offset="100%" stop-color="#9a6b18"/>
+        </linearGradient>
+      </defs>
+      <!-- RULET -->
+      <text x="50%" y="42%" text-anchor="middle"
+            font-family="'Montserrat', sans-serif"
+            font-weight="800"
+            font-size="170"
+            fill="url(#goldFill)"
+            stroke="url(#goldStroke)"
+            stroke-width="8"
+            paint-order="stroke fill">
+        RULET
+      </text>
+      <!-- KAZİNO -->
+      <text x="50%" y="78%" text-anchor="middle"
+            font-family="'Montserrat', sans-serif"
+            font-weight="800"
+            font-size="140"
+            fill="url(#goldFill)"
+            stroke="url(#goldStroke)"
+            stroke-width="7"
+            paint-order="stroke fill">
+        KAZİNO
+      </text>
+    </svg>
+  </div>
+
+  <!-- Контент -->
+  <div class="overlay">
+    <h1>🎰 Xoş gəlmisiniz!</h1>
+    <a class="btn" href="https://wa.me/+79105276670" target="_blank">📲 WhatsApp ilə əlaqə</a>
+    <a class="btn" href="https://chcplay.net/" target="_blank">🌐 Əsas sayta keçid</a>
+  </div>
+
+  <!-- Иконка 24/7 -->
+  <div class="badge-247">24/7</div>
+</body>
+</html>
